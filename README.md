@@ -57,37 +57,41 @@ git clone https://github.com/YourUsername/ArachnoBot-STL.git
 
 ### Body Parts
 
-| Part Name | Description | Count |3D Printing Instructions | Photo | Link to STL |
-|-----------|----------|--------|--------------------------|-------|-------------|
-| Frame | This serves as the robot's central structure | x1 | ![Alt text](media/frame.png) | |
-| Carapace | Consisits of 3 parts: Front, Mid, Back. <br />**TODO:** tongue and groove technique | Layer height: 0.2mm, Fill: 20%, Supports: Yes | ![Main Body](media/new_carapace.png) | [Download STL](./STL/MainBody.stl) |
-| Power compartment | Holds the 2S LiPo Battery | Layer height: 0.2mm, Fill: 30% | ![Alt text](media/power_compartment.png)| [Download STL](./STL/BatteryHolder.stl) |
-| Power compartment door | **TODO:** Needs improvement - maybe rewoork it to be snap-fit design || ![ sssss](media/power_door.png)|
-| Electronics plate | plate between Pawer compartment Frame | | ![Alt text](media/electronics_plate.png) |
-| Controller plate | Allows to attach controller (Compatible with raspberry and Serco 2040) to Electronics plate or Carapace (middle) | | ![Alt text](media/controller_plate.png) |
+| Part Name | Description |3D Printing Instructions | Count | Photo | Link to STL |
+|-----------|-------------|-------------------------|-------|-------|-------------|
+| Frame | Serves as the robot's central structure. | Layer height: 0.2mm, Fill: 20%, No supports needed | 1 | ![Frame](media/frame.png) | [Frame](./stl/Frame.stl) |
+| Frame Center Servo Holder | Holds the servo motor in the central part of the frame. | Layer height: 0.2mm, Fill: 30%, Supports: No | 2 - for hexapod | ![Frame Center Servo Holder](media/frame_center_servo_holder.png) | [Frame Center Servo Holder](./stl/FrameCenterServoHolder.stl) |
+| Frame Side Servo Holder | Holds the servo motors on either side of the frame. | Layer height: 0.2mm, Fill: 30%, Supports: No | 4 | ![Frame Side Servo Holder](media/frame_side_servo_holder.png) | [Frame Side Servo Holder](./stl/FrameSideServoHolder.stl) |
+| Carapace | Consists of 3 parts: Front, Mid, Back. Design with tongue and groove technique for easy assembly comming soon. | Layer height: 0.2mm, Fill: 20%, Supports: Yes | 1 set | ![Carapace](media/new_carapace.png) | [Carapace Front](./stl/CarapaceFront.stl)<br /> [Carapace Mid](./stl/CarapaceMid.stl) <br /> [Carapace Back](./stl/CarapaceBack.stl) |
+| Power compartment | Holds the 2S LiPo Battery securely. | Layer height: 0.2mm, Fill: 30% | 1 | ![Power compartment](media/power_compartment.png) | [Power compartment](./stl/PowerCompartment.stl) |
+| Power compartment door | Door for the power compartment. Future improvement: snap-fit design. | Layer height: 0.2mm, Fill: 20%, Supports: No | 1 | ![Power compartment door](media/power_door.png) | [Power compartment door](./stl/PowerCompDoor.stl) |
+| Electronics plate | Sits between the Power compartment and the Frame, holding electronics in place. | Layer height: 0.2mm, Fill: 20% | 1 | ![Electronics plate](media/electronics_plate.png) | [Electronics plate](./stl/ElectronicsPlate.stl) |
+| Controller plate | Designed to hold controllers like Raspberry Pi or Servo 2040. Can be attached to the Electronics plate or Carapace (middle). | Layer height: 0.2mm, Fill: 20% | 1 | ![Controller plate](media/controller_plate.png) | [Controller plate](./stl/ControllerPlate.stl) |
 
 ### Leg Parts
 
-| Part Name | Comments | 3D Printing Instructions | Photo | Link to STL |
-|-----------|----------|--------------------------|-------|-------------|
-|Servo joint|||![Alt text](media/servo_joint.png)|
-|Leg rib||| ![Alt text](media/leg_rib.png) |
-| Coxa Side 1 | Upper leg part | Layer height: 0.2mm, Fill: 30% | ![Alt text](media/coxa_1.png) | [Download STL](./STL/Femur.stl) |
-| Coxa Side 2 | Upper leg part | Layer height: 0.2mm, Fill: 30% | ![Alt text](media/coxa_2.png) | [Download STL](./STL/Femur.stl) |
-| Femur side 1 | | | ![Alt text](media/femur_1.png) |
-| Femur side 2 | | | ![Alt text](media/femur2.png) |
-| Tibia top | Lower leg part | Layer height: 0.1mm, Fill: 30% | ![Alt text](media/tibia_top.png)| [Download STL](./STL/Tibia.stl) |
-| Tibia bottom | | | ![Alt text](media/tibia_bottom.png) |
-| Leg shield ||| ![Alt text](media/leg_shield.png) |
-| Micro switch holder ||| ![Alt text](media/switch_holder.png) |
-| Micro switch cover | | | ![Alt text](media/switch_cover.png) |
-| Leg tip | | | ![Alt text](media/leg_tip.png) |
-| Claw | Made out of soft material it silences robot movement and improves its traction to the ground | Material: TPU | ![Alt text](media/claw.png) |
+| Part Name | Comments | 3D Printing Instructions | Count | Photo | Link to STL |
+|-----------|----------|--------------------------|-------|-------|-------------|
+| Servo joint | Connects servo to leg components | | 3 per leg | ![Servo joint](media/servo_joint.png) | [Servo joint](./stl/ServoJoint.stl) |
+| Leg rib | Adds structural integrity to the legs | | 2 per leg | ![Leg rib](media/leg_rib.png) | [Leg rib](./stl/LegRib.stl) |
+| Coxa Side 1 | Upper part of the leg, connects to the servo joint | Layer height: 0.2mm, Fill: 30% | 1 per leg | ![Coxa Side 1](media/coxa_1.png) | [Coxa Side 1](./stl/CoxaSide1_625ZZ.stl) |
+| Coxa Side 2 | Companion to Coxa Side 1, forms the upper leg part. | Layer height: 0.2mm, Fill: 30% | 1 per leg | ![Coxa Side 2](media/coxa_2.png) | [Coxa Side 2](./stl/CoxaSide2_8holes.stl) |
+| Femur side 1 | Middle segment of the leg | | 1 per leg | ![Femur side 1](media/femur_1.png) | [Femur side 1](./stl/FemurSide1_625ZZ.stl) |
+| Femur side 2 | Companion to Femur side 1, forms the upper leg part.| | 1 per leg | ![Femur side 2](media/femur2.png) | [Femur side 2](./stl/FemurSide2_8Holes.stl) |
+| Tibia top | Lower leg part connecting to femur | Layer height: 0.1mm, Fill: 30% | 1 per leg | ![Tibia top](media/tibia_top.png) | [Tibia top](./stl/TibiaTop.stl) |
+| Tibia bottom | End segment of the leg | | 1 per leg | ![Tibia bottom](media/tibia_bottom.png) | [Tibia bottom](./stl/TibiaBottomLong.stl) |
+| Leg shield | Covers and protects leg mechanics | | 1 per leg | ![Leg shield](media/leg_shield.png) | [Leg shield](./stl/LegShield.stl) |
+| Micro switch holder | Holds the micro switch in place for leg feedback | | 1 per leg | ![Micro switch holder](media/switch_holder.png) | [Micro switch holder](./stl/MicroswitchHolderRound.stl) |
+| Micro switch cover | Covers the micro switch for protection | | 1 per leg | ![Micro switch cover](media/switch_cover.png) | [Micro switch cover](./stl/SwitchCover.stl) |
+| Leg tip | End tip for the legs, provides better grip | | 1 per leg | ![Leg tip](media/leg_tip.png) | [Leg Tip](./stl/Tip.stl) |
+| Claw | Use soft material tip for better grip and silent movement | Material: TPU | 1 per leg | ![Claw](media/claw.png) | [Claw](./stl/Claw.stl) |
+
+
 ### Other Parts
 
-| Part Name | Comments | 3D Printing Instructions | Photo | Link to STL |
-|-----------|----------|--------------------------|-------|-------------|
-| Spiderbot stand | Consists of 2 parts that can be glued together: stand and leg. Allows for robot testing in the air. LEg should be attache dto something stable (tripod, weights etc) | Layer height: 0.3mm, Fill: 40% Scale leg in Z direction of you need it higher. | ![Alt text](media/stand.png)  | [Leg](./STL/ServoMount.stl)<br />------<br /> [Stand](./STL/ServoMount.stl) |
+| Part Name | Comments | 3D Printing Instructions | Count | Photo | Link to STL |
+|-----------|----------|--------------------------|-------|-------|-------------|
+| Spiderbot stand | Consists of 2 separate pieces: a stand and a leg. This allows for airborne testing of the robot. The leg can be attached to a stable object like a tripod or weights for added stability. | Layer height: 0.3mm, Fill: 40%. For a taller stand, scale the leg in the Z direction. | 1 set (1 stand, 1 leg) | ![Spiderbot stand](media/stand.png)  | [Leg](./STL/ServoMount.stl)<br />------<br /> [Stand](./STL/ServoMount.stl) |
 
 ---
 
