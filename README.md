@@ -40,6 +40,9 @@ This project is intended for educational purposes. Please exercise caution and r
 - Basic knowledge of electronics
 - Soldering kit
 - [Optional] CAD software like Fusion 360 for customization
+- 
+It's a part of the youtube series:
+[![YouTube video](https://raw.githubusercontent.com/robs-workbench/hexapod_spiderbot_tutorials/main/media/youtube_tuts.png)](https://www.youtube.com/watch?v=751yl4RHTlI)
 
 ---
 
