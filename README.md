@@ -48,7 +48,7 @@ This project is intended for educational purposes. Please exercise caution and r
 Clone this repository using the following command:
 
 ```bash
-git clone https://github.com/YourUsername/ArachnoBot-STL.git
+git clone https://github.com/robs-workbench/hexapod_spiderbot_model.git
 ```
 
 ---
